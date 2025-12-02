@@ -1,13 +1,13 @@
 body {
 
-    background-image: url("../MiWebEnGithub/images/fondoIndex.jpg");
+    background-image: url("../MiWebEnGithub/Tareas/images/fondoIndex.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: left;
 
     h1 {
         color: white;
-        background-color: rgb(3, 81, 3);
+        background-color:  aqua;
     }
 
     img{
@@ -15,7 +15,7 @@ body {
         border-radius: 25px;
         box-shadow: 10px 5px 5px black;
 
-        background: url('../MiWebEnGithub/images/fondoPapel.jpg');
+        background: url('../MiWebEnGithub/Tareas/images/fondoPapel.jpg');
         background-repeat: no-repeat;
     }
     ul {
@@ -24,7 +24,7 @@ body {
 
     li {
         display: block;
-        border: 2px yellow ;
+        border: 2px solid yellow ;
 
     }
     a {
