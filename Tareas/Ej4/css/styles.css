@@ -1,0 +1,125 @@
+/*
+    CSS para el examen
+
+    colores:
+
+    fondo: #333333;
+    fondo: cajas: #424242;
+    linea: lightgray;
+    boton: #007BFF;
+    boton seleccionado: #0056b3;
+*/
+
+
+
+
+body {
+    background-color: #333333;
+    width: 90%;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.container {
+    text-align: center;
+}
+
+.youtuber, footer, header {
+    background-color: #424242;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow:20px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;    
+}
+footer {
+    padding: 0px;
+    color: white;
+}
+
+.imageHome{
+    border:black 4px solid;
+    border-radius: 3%;
+    width: 40%;
+    /* Se utiliza en imágenes y videos 
+    para asegurarse de que siempre llenen 
+    completamente el contenedor, manteniendo
+    su relación de aspecto*/
+    object-fit: cover; 
+}
+
+.youtuber .images {
+    width: 150px;
+    height: 150px;
+    border-radius: 3%;    
+    /* Se utiliza en imágenes y videos 
+    para asegurarse de que siempre llenen 
+    completamente el contenedor, manteniendo 
+    su relación de aspecto*/
+    object-fit: cover; 
+}
+
+.youtuber h2 {    
+    color: white;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.youtuber p {
+    color: white;
+    font-size: 1em;
+}
+
+#menu {
+   list-style-type: none;
+   
+}
+
+li {
+    display: inline-block;
+  
+    border-left: 4px red solid;
+   
+    padding-left: 5px;
+}
+
+#menu a {
+    
+    text-decoration: none;
+    color: lightgray; 
+}
+
+#menu a:hover {
+     text-decoration: underline;
+     text-decoration-color: lightgray;
+}
+
+
+.button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    /* animacion en css, para cambiar el color del boton, no visto en clase 
+    pero yo te lo regalo ;) */
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #0056b3 ;
+}
+
+@media all and (max-width: 700px) {
+    .youtuber, .footer {
+        border-color: red ;
+    }
+    .button {
+        background-color: lightcoral; 
+    }
+    .button:hover {
+        background-color: red;
+    }    
+}
