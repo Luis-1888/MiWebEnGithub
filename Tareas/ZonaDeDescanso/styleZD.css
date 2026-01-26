@@ -1,0 +1,255 @@
+
+
+body{
+background-image: url("fondos/Link.gif");
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+a:active{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+header>ul>li{
+    display: inline-block;
+    padding-right:8% ;
+    padding-left:8% ;
+    background-color: black;
+    border-radius: 30px;
+    border-left: 5px white solid;
+}
+
+header{
+    width: 100%;
+    top: 0;
+    background-attachment: fixed;
+    position: sticky;
+    display: inline-block;
+    border-radius: 20px;
+    
+    z-index: 1;
+}
+
+header>ul{
+list-style: none;
+text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+
+/*Ventana INICIAL*/
+#welcoming{
+    color: white;
+    height: 50%;
+    aspect-ratio: 1/1;
+
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 3px solid;
+    border-radius: 50%;
+    
+    background-color: black;
+    
+    z-index: 1;
+
+    transition: all 0.8s;
+}
+
+#contenidoWelcoming{
+
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    
+}
+
+#titleWelcome{
+    
+    
+    text-align: center;
+    
+}
+#textWelcome{
+    
+    
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom:30%;
+}
+
+#textWelcome>p>a{
+    display: inline-block;
+    transition: transform 0.3s ease;
+    color: rgb(0, 255, 0);
+    
+}
+
+#textWelcome>p>a:hover{
+    transform: scale(1.4);
+    
+}
+
+
+
+/*ventana FONDOS*/
+#fondos{
+    margin-top: 5%;
+    margin-left: 8%;
+    width: 28%;
+    height: 28%;
+    float: left;
+}
+
+
+#fondos > h1{
+    text-align: center;
+     padding: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    border-left: 5px white solid;
+
+}
+
+
+
+#fotos_animadas{
+width: 100%;
+text-align: center;
+
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#fotos_animadas > div{
+    display: inline-block;
+    width: 32%;
+    margin: 2%;
+    transition: 0.3s ease;
+    text-align: center;
+    
+}
+
+#fotos_animadas > div:hover{
+
+    width: 40%;
+    margin: 2%;
+    
+}
+
+.fondos{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+}
+
+
+
+
+.pinterest{
+    width: 30%;
+    display: block;
+    margin-left: 30%;
+}
+
+
+/*videos*/
+#music{
+   float: right;
+    margin-top: 5%;
+    margin-right: 8%;
+    width: 28%;
+    height: 28%;
+}
+
+#music > *{
+    text-align: center;
+}
+#music > h1{
+    padding: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    border-left: 5px white solid;
+}
+
+#ytPlayer{
+    margin-top: 4%;
+    width: 100%;
+    height: 90%;
+    
+}
+
+a:hover {
+    
+    transition: color 0.5s;
+    color: rgb(6, 181, 212);
+   
+}
+
+#welcoming:has(a:hover){
+    
+    color:rgb(6, 181, 212);;
+    }
+
+#welcoming.exit {
+    transform: translate(-50%, -180%) scale(0.9);
+    opacity: 0;
+}
+
+
+
+@media all and (max-width: 870px){
+
+   header>ul>li{
+    font-size: 50%;
+}
+}
+
+@media all and (max-width: 500px) {
+ header>ul>li{
+    font-size: 90%;
+    display: block;
+}
+
+
+#fondos{
+   
+    width: 40%;
+    float: none;
+    margin-left:30% ;
+    
+}
+#music{
+    width: 40%;
+    float: none;
+    margin-left:30% ;
+    margin-top: 30%;
+}
+
+
+}
+

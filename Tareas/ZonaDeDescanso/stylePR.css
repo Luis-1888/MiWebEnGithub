@@ -1,0 +1,202 @@
+body{
+background-color: black;
+margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+a:active{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+
+header{
+    width: 100%;
+    top: 0;
+    background-image: url(/fondos/Cementerio.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 1000px;
+    position: sticky;
+    display: inline-block;
+    border-radius: 20px;
+    border-bottom: 10px black solid;
+    
+
+    z-index: 1;
+}
+
+header>ul{
+list-style: none;
+text-align: center;
+
+
+
+}
+
+
+
+header>ul>li{
+    display: inline-block;
+    padding-right:8% ;
+    padding-left:8% ;
+    background-color: black;
+    border-radius: 30px;
+    border-left: 5px white solid;
+}
+
+a:hover {
+    
+    transition: color 0.5s;
+    color: rgb(6, 181, 212);
+   
+}
+
+#cuerpo{
+    background-image: url(/fondos/Cementerio.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    width: 80%;
+    height: auto;
+    margin:10%;
+    padding-top: 5px;
+    
+    border-radius:30px;
+    border: white solid;
+}
+
+p{
+ color: white;
+background-color: black;  
+border-radius:30px;
+padding: 5px;
+padding-left: 20px;
+padding-right: 20px;
+border-left: 5px white solid;
+}
+
+#texto{
+    
+    color: white;
+
+    width: 80%;
+    height: auto;
+    margin:10%;
+    margin-top: 10%;
+    
+    
+}
+
+
+.titulo{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-decoration: underline;
+    background-color: black;
+
+    border-radius:30px;
+    border-left: 5px white solid;
+}
+
+
+p>a{
+    color: red;
+}
+p>a:visited{
+    color: red;
+}
+p>a:hover{
+    color: red;
+    color: rgb(6, 181, 212);
+}
+#ZD{
+    float: left;
+    width: 40%;
+}
+#CT{
+    float: right;
+    width: 40%;
+}
+
+#PR{
+    margin-top: 20px;
+    clear: both;
+}
+
+.icono{
+    width: 50px;
+}
+
+#Youtube{
+    float: right;
+    padding-right: 10%;
+}
+
+#Pinterest{
+    float: left;
+    padding-left: 10%;
+}
+
+footer{
+    border: white solid;
+    border-radius: 30px;
+    background-color: black;
+    width: 100%;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    transform: translateX(-2px) translateY(2px);
+    
+}
+
+footer>p{
+    
+    border:none;
+}
+
+@media all and (max-width: 870px){
+
+   header>ul>li{
+    font-size: 50%;
+}
+}
+
+@media all and (max-width: 500px) {
+
+header>ul>li{
+    font-size: 90%;
+    display: block;
+}
+
+#ZD{
+    float: none;
+    width: 100%;
+}
+#CT {
+    float: none;
+    width: 100%;
+}
+
+#cuerpo{
+    height: auto;
+}
+#Youtube{
+    float: none;
+    padding-left: 45%;
+    display: block;
+}
+
+#Pinterest{
+    float: none;
+    padding-left: 45%;
+    display: block;
+}
+}
