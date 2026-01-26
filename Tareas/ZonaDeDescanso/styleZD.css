@@ -239,24 +239,29 @@ a:hover {
 
 #fondos{
    
-    width: 40%;
+    width: 90%;
     float: none;
-    margin-left:30% ;
+    margin-left:5% ;
     display: block;
     
 }
 #music{
-    width: 40%;
+    width: 90%;
     float: none;
-    margin-left:30% ;
-    margin-top: 30%;
+    margin-left:5% ;
+    margin-top: 60%;
     display: block;
 }
-#fotos_animadas{
+
+
+
+}
+
+@media all and (max-width: 220px) {
+ #fotos_animadas{
     height: 60%;
 
 }
-
-
 }
+
 
