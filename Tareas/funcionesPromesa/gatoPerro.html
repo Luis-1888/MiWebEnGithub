@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+
+
+</head>
+<body>
+    <div id="salida">
+        <button type="button" id="boton"> Saca Algooo</button>
+        <div id="imagen">
+            <img src="" height="">
+        </div>
+    </div>
+</body>
+<script>
+    function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+    function buscarImagen(imagenUrl) {
+        let numR=randomInt(0,1)
+        let url=imagenUrl[numR]
+        
+        console.log(numR)
+        console.log(url)
+
+     fetch(url)
+            .then(Response => Response.json())
+            .then(datos => {
+                console.log(datos)
+                imagen.innerHTML="<img src=\"" + datos[0].url + "\" height=\"600\">"
+                    
+              
+                   
+                
+
+            
+            })
+            .catch(error => {
+            })
+}
+
+
+    let imagenUrl=["https://api.thecatapi.com/v1/images/search", "https://api.thedogapi.com/v1/images/search", "https://coffee.alexflipnote.dev/random.json"]
+    let salida=document.getElementById("salida")
+    let boton=document.getElementById("boton")
+    let imagen=document.getElementById("imagen")
+
+    boton.addEventListener("click" , e =>{
+        
+        buscarImagen(imagenUrl)
+           
+        
+    })
+
+
+
+</script>
+</html>

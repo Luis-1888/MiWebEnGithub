@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tiempo</title>
+    
+    
+</head>
+<body>
+    <button type="button" id="boton">Horas</button>
+    <div id="salida">
+
+
+        </p>
+    </div>
+</body>
+<script>
+    let zonas=["Europe/London", "Europe/Madrid", "Asia/Tokyo", "America/New_York",
+"America/Los_Angeles", "Europe/Paris", "Europe/Berlin", "Europe/Moscow",
+"Asia/Dubai", "America/Argentina/Buenos_Aires", "America/Sao_Paulo",
+"Chile/Continental"]
+
+let url="https://timeapi.io/api/Time/current/zone?timeZone="
+let salida=document.getElementById("salida")
+let boton=document.getElementById("boton")
+
+boton.addEventListener("click", e =>{
+     salida.innerHTML=""
+    zonas.forEach(zona => {
+        console.log("https://timeapi.io/api/Time/current/zone?timeZone="+zona)
+        fetch("https://timeapi.io/api/Time/current/zone?timeZone="+zona)
+        .then(Response => Response.json())
+        .then(datos => {
+        salida.innerHTML+="<p>" + datos.timeZone + " => " + datos.time + "\n" + "</p>"
+        
+        })
+    });
+})
+
+
+
+
+</script>
+</html>

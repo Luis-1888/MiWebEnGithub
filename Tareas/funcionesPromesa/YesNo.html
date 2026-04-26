@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tiempo</title>
+    
+    
+</head>
+<body>
+    <button type="button" id="boton">Horas</button>
+    <div id="salida">
+        <div id="imagen">
+            <img src="" height="">
+        </div>    
+
+
+    </div>
+</body>
+<script>
+
+
+let url="https://yesno.wtf/api"
+let salida=document.getElementById("salida")
+let boton=document.getElementById("boton")
+let imagen=document.getElementById("imagen")
+console.log(imagen)
+boton.addEventListener("click", e =>{
+
+        console.log(url)
+        fetch(url)
+            .then(r => r.json())
+            .then(datos => {
+                console.log(datos)
+                imagen.innerHTML="<img src=\"" + datos.image + "\" height=\"600\">\n<p>Tu respuesta es: <h1>" + datos.answer.toUpperCase() + "</h1></p>"
+
+                    
+              
+                   
+                
+
+            
+            })
+
+})
+
+
+
+
+</script>
+</html>
